@@ -1,4 +1,4 @@
-# Simplify.Web.Templates
+# Simplify.Templates
 
 Visual studio project templates for [Simplify](https://github.com/SimplifyNet/Simplify) libraries.
 
