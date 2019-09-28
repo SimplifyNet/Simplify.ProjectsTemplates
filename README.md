@@ -4,7 +4,7 @@ Visual studio project templates for [Simplify](https://github.com/SimplifyNet/Si
 
 ## Package status
 
-| Latest version   |                            [![Nuget version](http://img.shields.io/badge/nuget-v0.1-blue.svg)](https://www.nuget.org/packages/Simplify.Templates/)                             |
+| Latest version   |                            [![Nuget version](http://img.shields.io/badge/nuget-v0.2-blue.svg)](https://www.nuget.org/packages/Simplify.Templates/)                             |
 | :--------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Dependencies** | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Templates.svg)](https://libraries.io/nuget/Simplify.Templates) |
 
