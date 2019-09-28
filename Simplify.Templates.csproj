@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.2</TargetFramework>
+
+		<PackageType>Template</PackageType>
+		<PackageVersion>0.2</PackageVersion>
+		<PackageId>Simplify.Templates</PackageId>
+		<IsPackable>true</IsPackable>
+		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Templates</PackageProjectUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/Logo.png</PackageIconUrl>
+		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Templates</RepositoryUrl>
+		<RepositoryType>GIT</RepositoryType>
+		<PackageReleaseNotes>
+			New
+			* Simplify.WindowsServices template
+			* Simplify.Scheduler template
+		</PackageReleaseNotes>
+		<Title>Simplify project templates</Title>
+		<Authors>Alexander Krylkov</Authors>
+		<Description>Simplify libraries project templates collection.</Description>
+		<Tags>templates;simplify</Tags>
+
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+		<Compile Remove="**\*" />
+	</ItemGroup>
+</Project>

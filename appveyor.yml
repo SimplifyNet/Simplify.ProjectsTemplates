@@ -1,0 +1,22 @@
+version: "{build}"
+
+image: Visual Studio 2019
+
+skip_tags: true
+clone_depth: 1
+
+configuration: Release
+platform: Any CPU
+
+before_build:
+  - cmd: "dotnet restore Simplify.Templates.sln"
+
+build:
+  project: Simplify.Templates.sln
+  verbosity: minimal
+
+after_build:
+  - cmd: "dotnet pack Simplify.Templates.csproj"
+
+artifacts:
+  - path: 'bin\Any CPU\Release\*.nupkg'
