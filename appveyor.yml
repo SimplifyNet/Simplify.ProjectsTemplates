@@ -9,14 +9,10 @@ configuration: Release
 platform: Any CPU
 
 before_build:
-  - cmd: "dotnet restore Simplify.Templates.sln"
+  - nuget restore Simplify.ProjectsTemplates.sln
 
 build:
-  project: Simplify.Templates.sln
+  project: Simplify.ProjectsTemplates.sln
+  parallel: true
   verbosity: minimal
-
-after_build:
-  - cmd: "dotnet pack Simplify.Templates.csproj"
-
-artifacts:
-  - path: 'bin\Any CPU\Release\*.nupkg'
+  publish_nuget: true
