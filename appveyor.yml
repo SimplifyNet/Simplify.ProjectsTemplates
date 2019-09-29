@@ -15,4 +15,9 @@ build:
   project: Simplify.ProjectsTemplates.sln
   parallel: true
   verbosity: minimal
-  publish_nuget: true
+
+after_build:
+  - cmd: "dotnet pack Simplify.ProjectsTemplates.csproj"
+
+artifacts:
+  - path: 'bin\Any CPU\Release\*.nupkg'
