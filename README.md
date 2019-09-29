@@ -1,17 +1,16 @@
-# Simplify.Templates
+# Simplify.ProjectsTemplates
+
+[![Nuget version](http://img.shields.io/nuget/vpre/Simplify.ProjectsTemplates)](https://www.nuget.org/packages/Simplify.ProjectsTemplates)
+[![Nuget Downloads](https://img.shields.io/nuget/dt/Simplify.ProjectsTemplates)](https://www.nuget.org/packages/Simplify.ProjectsTemplates)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.ProjectsTemplates)](https://libraries.io/nuget/Simplify.ProjectsTemplates)
+[![AppVeyor](https://img.shields.io/appveyor/ci/i4004/simplify-project-templates)](https://ci.appveyor.com/project/i4004/simplify-project-templates)
 
 Visual studio project templates for [Simplify](https://github.com/SimplifyNet/Simplify) libraries.
-
-## Package status
-
-| Latest version   |                            [![Nuget version](http://img.shields.io/badge/nuget-v0.2-blue.svg)](https://www.nuget.org/packages/Simplify.Templates/)                             |
-| :--------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Dependencies** | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Templates.svg)](https://libraries.io/nuget/Simplify.Templates) |
 
 ## Templates packages installation
 
 ```console
-dotnet new -i Simplify.Templates
+dotnet new -i Simplify.ProjectsTemplates
 ```
 
 | Template                | Short Name              |
