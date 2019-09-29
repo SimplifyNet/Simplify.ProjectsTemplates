@@ -4,11 +4,11 @@
 
 		<PackageType>Template</PackageType>
 		<PackageVersion>0.1</PackageVersion>
-		<PackageId>Simplify.Templates</PackageId>
+		<PackageId>Simplify.ProjectsTemplates</PackageId>
 		<IsPackable>true</IsPackable>
-		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Templates</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/Logo.png</PackageIconUrl>
-		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Templates</RepositoryUrl>
+		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
 			New

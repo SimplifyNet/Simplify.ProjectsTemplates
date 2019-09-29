@@ -7,7 +7,7 @@
 		"type": "process",
 		"args": [
 			"build",
-			"${workspaceFolder}/Simplify.Templates.sln"
+			"${workspaceFolder}/Simplify.ProjectsTemplates.sln"
 		],
 		"problemMatcher": "$msCompile",
 		"group":
