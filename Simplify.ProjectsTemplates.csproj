@@ -3,7 +3,7 @@
 		<TargetFramework>netcoreapp2.2</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.1</PackageVersion>
+		<PackageVersion>0.1.1</PackageVersion>
 		<PackageId>Simplify.ProjectsTemplates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</PackageProjectUrl>
@@ -11,9 +11,8 @@
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
-			New
-			* Simplify.WindowsServices template
-			* Simplify.Scheduler template
+			Updates
+			* Upgrade to Simplify.WindowsServices 2.10
 		</PackageReleaseNotes>
 		<Title>Simplify project templates</Title>
 		<Authors>Alexander Krylkov</Authors>
