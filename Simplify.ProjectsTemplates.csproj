@@ -3,7 +3,7 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.1.2</PackageVersion>
+		<PackageVersion>0.1.3</PackageVersion>
 		<PackageId>Simplify.ProjectsTemplates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</PackageProjectUrl>
