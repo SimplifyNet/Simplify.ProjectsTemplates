@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>netcoreapp2.2</TargetFramework>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
 
 		<PackageType>Template</PackageType>
 		<PackageVersion>0.1.2</PackageVersion>
@@ -12,9 +12,9 @@
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
 			Updates
-			* Upgrade to Simplify.WindowsServices 2.12
-			* Upgrade to Simplify.Schedulre 1.0-pre05
-			* Upgrade to  Microsoft.Extensions.Configuration.Json 3.1
+			* Upgrade to Simplify.Scheduler 1.0
+			* Upgrade to  Microsoft.Extensions.Configuration.Json 3.1.5
+			* Switch to .NET Core 3.1
 		</PackageReleaseNotes>
 		<Title>Simplify project templates</Title>
 		<Authors>Alexander Krylkov</Authors>
