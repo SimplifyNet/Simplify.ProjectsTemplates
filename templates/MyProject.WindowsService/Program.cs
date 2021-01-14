@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿using MyProject.WindowsService.Infrastructure;
 using MyProject.WindowsService.Setup;
 using Simplify.DI;
 using Simplify.WindowsServices;
@@ -17,31 +17,20 @@ namespace MyProject.WindowsService
 #endif
 			//+:cnd:noEmit
 
-			InitializeContainer();
+			// IOC container setup
+			IocRegistrations.Register().Verify();
 
-			using (var handler = new SingleTaskServiceHandler<Worker>(IocRegistrations.Configuration))
-			{
-				handler.OnException += OnException;
+			using var handler = new SingleTaskServiceHandler<Worker>(IocRegistrations.Configuration)
+				.SubscribeLog();
 
-				if (handler.Start(args))
-					return;
-			}
-
-			// On  time launch as a console application for testing
-			using (var scope = DIContainer.Current.BeginLifetimeScope())
-				scope.Resolver.Resolve<Worker>().Run();
+			if (!handler.Start(args))
+				RunAsAConsoleApplication();
 		}
 
-		private static void OnException(ServiceExceptionArgs args)
+		private static void RunAsAConsoleApplication()
 		{
-			Trace.WriteLine(args.Exception.Message);
-		}
-
-		private static void InitializeContainer()
-		{
-			IocRegistrations.Register();
-
-			DIContainer.Current.Verify();
+			using var scope = DIContainer.Current.BeginLifetimeScope();
+			scope.Resolver.Resolve<Worker>().Run();
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿using MyProject.Scheduler.Infrastructure;
 using MyProject.Scheduler.Setup;
 using Simplify.DI;
 using Simplify.Scheduler;
@@ -17,31 +17,24 @@ namespace MyProject.Scheduler
 #endif
 			//+:cnd:noEmit
 
-			InitializeContainer();
+			// IOC container setup
+			IocRegistrations.Register().Verify();
 
-			using var scheduler = new SingleTaskScheduler<Worker>(IocRegistrations.Configuration);
-
-			scheduler.OnException += OnException;
+			using var scheduler = new SingleTaskScheduler<Worker>(IocRegistrations.Configuration)
+				.SubscribeLog();
 
 			if (scheduler.Start(args))
 				return;
 
-			// Launch without the scheduler for testing
+			if (!scheduler.Start(args))
+				// Launch without the scheduler for testing
+				RunAsAConsoleApplication();
+		}
 
+		private static void RunAsAConsoleApplication()
+		{
 			using var scope = DIContainer.Current.BeginLifetimeScope();
 			scope.Resolver.Resolve<Worker>().Run();
-		}
-
-		private static void OnException(SchedulerExceptionArgs args)
-		{
-			Trace.WriteLine(args.Exception.Message);
-		}
-
-		private static void InitializeContainer()
-		{
-			IocRegistrations.Register();
-
-			DIContainer.Current.Verify();
 		}
 	}
 }

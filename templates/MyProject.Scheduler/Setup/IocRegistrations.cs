@@ -3,24 +3,27 @@ using Simplify.DI;
 
 namespace MyProject.Scheduler.Setup
 {
-	public class IocRegistrations
+	public static class IocRegistrations
 	{
 		public static IConfiguration Configuration { get; private set; }
 
-		public static void Register()
+		public static IDIContainerProvider Register()
 		{
-			RegisterConfiguration();
+			DIContainer.Current.RegisterConfiguration()
+				.Register<Worker>();
 
-			DIContainer.Current.Register<Worker>();
+			return DIContainer.Current;
 		}
 
-		private static void RegisterConfiguration()
+		private static IDIRegistrator RegisterConfiguration(this IDIRegistrator registrator)
 		{
 			Configuration = new ConfigurationBuilder()
 				.AddJsonFile("appsettings.json", false)
 				.Build();
 
-			DIContainer.Current.Register(p => Configuration, LifetimeType.Singleton);
+			registrator.Register(p => Configuration, LifetimeType.Singleton);
+
+			return registrator;
 		}
 	}
 }
