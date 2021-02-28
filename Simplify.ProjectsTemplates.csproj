@@ -13,6 +13,8 @@
 		<PackageReleaseNotes>
 			New
 			* Windows service with database project template added
+			Updates
+			* Dependencies bump to latest (floating versions set)
 		</PackageReleaseNotes>
 		<Title>Simplify project templates</Title>
 		<Authors>Alexander Krylkov</Authors>
