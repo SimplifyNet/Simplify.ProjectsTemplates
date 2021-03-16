@@ -12,9 +12,6 @@ namespace MyProject.WindowsService.Infrastructure
 			return handler;
 		}
 
-		private static void OnException(ServiceExceptionArgs args)
-		{
-			Trace.WriteLine(args.Exception.Message);
-		}
+		private static void OnException(ServiceExceptionArgs args) => Trace.WriteLine(args.Exception.Message);
 	}
 }

@@ -23,11 +23,8 @@ namespace MyProject.Scheduler
 			using var scheduler = new SingleTaskScheduler<Worker>(IocRegistrations.Configuration)
 				.SubscribeLog();
 
-			if (scheduler.Start(args))
-				return;
-
 			if (!scheduler.Start(args))
-				// Launch without the scheduler for testing
+				// One-time launch of user code without the scheduler
 				RunAsAConsoleApplication();
 		}
 

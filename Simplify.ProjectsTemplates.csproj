@@ -3,7 +3,7 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.3</PackageVersion>
+		<PackageVersion>0.3.1</PackageVersion>
 		<PackageId>Simplify.ProjectsTemplates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</PackageProjectUrl>
@@ -11,10 +11,11 @@
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
-			New
-			* Windows service with database project template added
+			Fixes
+				LaunchSettings.json added
 			Updates
-			* Dependencies bump to latest (floating versions set)
+				Expression-nody methods refactoring
+				Comments improved
 		</PackageReleaseNotes>
 		<Title>Simplify project templates</Title>
 		<Authors>Alexander Krylkov</Authors>

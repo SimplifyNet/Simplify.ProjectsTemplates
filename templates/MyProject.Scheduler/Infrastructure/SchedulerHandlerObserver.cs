@@ -12,9 +12,6 @@ namespace MyProject.Scheduler.Infrastructure
 			return handler;
 		}
 
-		private static void OnException(SchedulerExceptionArgs args)
-		{
-			Trace.WriteLine(args.Exception.Message);
-		}
+		private static void OnException(SchedulerExceptionArgs args) => Trace.WriteLine(args.Exception.Message);
 	}
 }

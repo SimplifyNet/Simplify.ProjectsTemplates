@@ -21,9 +21,7 @@ namespace MyProject.Scheduler.Setup
 				.AddJsonFile("appsettings.json", false)
 				.Build();
 
-			registrator.Register(p => Configuration, LifetimeType.Singleton);
-
-			return registrator;
+			return registrator.Register(p => Configuration, LifetimeType.Singleton);
 		}
 	}
 }

@@ -24,6 +24,7 @@ namespace MyProject.WindowsService
 				.SubscribeLog();
 
 			if (!handler.Start(args))
+				// One-time launch of user code without the windows-service hosting
 				RunAsAConsoleApplication();
 		}
 
