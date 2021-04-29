@@ -8,10 +8,3 @@ updates:
     timezone: Asia/Dacca
   open-pull-requests-limit: 10
   target-branch: develop
-  ignore:
-  - dependency-name: Simplify.Scheduler
-    versions:
-    - 1.0.1
-  - dependency-name: Simplify.WindowsServices
-    versions:
-    - 2.12.1
