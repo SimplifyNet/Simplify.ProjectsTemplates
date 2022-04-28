@@ -3,7 +3,7 @@
 [![Nuget version](http://img.shields.io/nuget/vpre/Simplify.ProjectsTemplates)](https://www.nuget.org/packages/Simplify.ProjectsTemplates)
 [![Nuget Downloads](https://img.shields.io/nuget/dt/Simplify.ProjectsTemplates)](https://www.nuget.org/packages/Simplify.ProjectsTemplates)
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.ProjectsTemplates)](https://libraries.io/nuget/Simplify.ProjectsTemplates)
-[![AppVeyor](https://img.shields.io/appveyor/ci/i4004/simplify-projectstemplates/master)](https://ci.appveyor.com/project/i4004/simplify-projectstemplates)
+[![Build Package](https://github.com/SimplifyNet/Simplify.ProjectsTemplates/actions/workflows/build.yml/badge.svg)](https://github.com/SimplifyNet/Simplify.ProjectsTemplates/actions/workflows/build.yml)
 
 Visual studio project templates for [Simplify](https://github.com/SimplifyNet/Simplify) libraries.
 
