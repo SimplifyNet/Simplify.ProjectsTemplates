@@ -22,13 +22,10 @@ jobs:
         uses: actions/setup-dotnet@v1
 
       - name: Restore Dependencies
-        run: dotnet restore
+        run: dotnet restore Simplify.ProjectsTemplates.csproj
 
       - name: Build Package
-        run: dotnet build --no-restore -c Release
-
-      - name: Perform Unit Testing
-        run: dotnet test --no-build -c Release --verbosity normal
+        run: dotnet build Simplify.ProjectsTemplates.csproj --no-restore -c Release
 
       - name: Create Package
         run: dotnet pack Simplify.ProjectsTemplates.csproj --no-build -c Release -o ./publish
