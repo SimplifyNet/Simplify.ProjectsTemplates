@@ -15,7 +15,7 @@
 		<Description>Simplify libraries project templates collection.</Description>
 		<Tags>templates;simplify</Tags>
 
-		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web/tree/master/src/Simplify.Web/CHANGELOG.md for details</PackageReleaseNotes>
+		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.ProjectsTemplates/tree/master/src/Simplify.ProjectsTemplates/CHANGELOG.md for details</PackageReleaseNotes>
 
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
