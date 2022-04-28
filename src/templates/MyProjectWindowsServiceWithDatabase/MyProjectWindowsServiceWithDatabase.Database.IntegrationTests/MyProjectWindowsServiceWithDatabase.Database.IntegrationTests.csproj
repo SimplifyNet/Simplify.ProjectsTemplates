@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+
+		<Description>MyProjectWindowsServiceWithDatabase.Database integration tests</Description>
+		<Product>MyProjectWindowsServiceWithDatabase</Product>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\MyProjectWindowsServiceWithDatabase.Database\MyProjectWindowsServiceWithDatabase.Database.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.*" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.*" />
+		<PackageReference Include="NUnit" Version="3.13.*" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.2.*" />
+	</ItemGroup>
+</Project>

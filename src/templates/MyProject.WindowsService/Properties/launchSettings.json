@@ -1,0 +1,10 @@
+{
+	"profiles":
+	{
+		"MyProject.WindowsService":
+		{
+			"commandName": "Project",
+			"commandLineArgs": "console"
+		}
+	}
+}
