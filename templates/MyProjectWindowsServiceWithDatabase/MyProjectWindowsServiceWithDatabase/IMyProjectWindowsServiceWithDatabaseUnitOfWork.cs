@@ -1,8 +1,7 @@
 ﻿using Simplify.Repository;
 
-namespace MyProjectWindowsServiceWithDatabase
+namespace MyProjectWindowsServiceWithDatabase;
+
+public interface IMyProjectWindowsServiceWithDatabaseUnitOfWork : ITransactUnitOfWork
 {
-	public interface IMyProjectWindowsServiceWithDatabaseUnitOfWork : ITransactUnitOfWork
-	{
-	}
 }

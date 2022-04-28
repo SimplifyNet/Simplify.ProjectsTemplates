@@ -1,12 +1,11 @@
 ﻿using NHibernate;
 using Simplify.Repository.FluentNHibernate;
 
-namespace MyProjectWindowsServiceWithDatabase.Database
+namespace MyProjectWindowsServiceWithDatabase.Database;
+
+public class MyProjectWindowsServiceWithDatabaseUnitOfWork : TransactUnitOfWork, IMyProjectWindowsServiceWithDatabaseUnitOfWork
 {
-	public class MyProjectWindowsServiceWithDatabaseUnitOfWork : TransactUnitOfWork, IMyProjectWindowsServiceWithDatabaseUnitOfWork
+	public MyProjectWindowsServiceWithDatabaseUnitOfWork(ISessionFactory sessionFactory) : base(sessionFactory)
 	{
-		public MyProjectWindowsServiceWithDatabaseUnitOfWork(ISessionFactory sessionFactory) : base(sessionFactory)
-		{
-		}
 	}
 }

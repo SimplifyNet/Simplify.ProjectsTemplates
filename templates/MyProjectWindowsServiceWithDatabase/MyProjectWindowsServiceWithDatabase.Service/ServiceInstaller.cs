@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel;
 using Simplify.WindowsServices;
 
-namespace MyProjectWindowsServiceWithDatabase.Service
+namespace MyProjectWindowsServiceWithDatabase.Service;
+
+[RunInstaller(true)]
+public class ServiceInstaller : ServiceInstallerBase
 {
-	[RunInstaller(true)]
-	public class ServiceInstaller : ServiceInstallerBase
-	{
-	}
 }

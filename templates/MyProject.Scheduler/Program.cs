@@ -1,37 +1,21 @@
-﻿using MyProject.Scheduler.Infrastructure;
+﻿using MyProject.Scheduler;
+using MyProject.Scheduler.Infrastructure;
 using MyProject.Scheduler.Setup;
 using Simplify.DI;
 using Simplify.Scheduler;
 
-namespace MyProject.Scheduler
+// IOC container setup
+DIContainer.Current
+	.RegisterAll()
+	.Verify();
+
+using var scheduler = new SingleTaskScheduler<Worker>(IocRegistrations.Configuration)
+	.SubscribeLog();
+
+if (!scheduler.Start(args))
 {
-	internal class Program
-	{
-		private static void Main(string[] args)
-		{
-			//-:cnd:noEmit
+	// One-time launch of user code without the scheduler
 
-#if DEBUG
-			// Run debugger
-			System.Diagnostics.Debugger.Launch();
-#endif
-			//+:cnd:noEmit
-
-			// IOC container setup
-			IocRegistrations.Register().Verify();
-
-			using var scheduler = new SingleTaskScheduler<Worker>(IocRegistrations.Configuration)
-				.SubscribeLog();
-
-			if (!scheduler.Start(args))
-				// One-time launch of user code without the scheduler
-				RunAsAConsoleApplication();
-		}
-
-		private static void RunAsAConsoleApplication()
-		{
-			using var scope = DIContainer.Current.BeginLifetimeScope();
-			scope.Resolver.Resolve<Worker>().Run();
-		}
-	}
+	using var scope = DIContainer.Current.BeginLifetimeScope();
+	scope.Resolver.Resolve<Worker>().Run();
 }

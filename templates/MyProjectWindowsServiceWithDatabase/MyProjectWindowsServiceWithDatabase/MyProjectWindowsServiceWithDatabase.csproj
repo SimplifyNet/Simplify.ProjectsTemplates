@@ -1,14 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<LangVersion>9.0</LangVersion>
+		<LangVersion>10.0</LangVersion>
 
-		<Product>MyProjectWindowsServiceWithDatabase</Product>
 		<Description>MyProjectWindowsServiceWithDatabase domain library</Description>
-		<Copyright>Copyright © 2021</Copyright>
+		<Product>MyProjectWindowsServiceWithDatabase</Product>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Repository" Version="1.5.*" />
+		<PackageReference Include="Simplify.Repository" Version="1.6.0" />
 		<PackageReference Include="Simplify.System" Version="1.6.*" />
 	</ItemGroup>
 </Project>

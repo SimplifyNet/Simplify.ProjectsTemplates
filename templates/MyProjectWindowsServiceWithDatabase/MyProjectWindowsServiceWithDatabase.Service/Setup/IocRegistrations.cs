@@ -2,30 +2,29 @@
 using MyProjectWindowsServiceWithDatabase.Database.Setup;
 using Simplify.DI;
 
-namespace MyProjectWindowsServiceWithDatabase.Service.Setup
+namespace MyProjectWindowsServiceWithDatabase.Service.Setup;
+
+public static class IocRegistrations
 {
-	public static class IocRegistrations
+	public static IConfiguration Configuration { get; private set; }
+
+	public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 	{
-		public static IConfiguration Configuration { get; private set; }
+		provider.RegisterConfiguration()
+			.RegisterMyProjectWindowsServiceWithDatabase()
+			.Register<Worker>();
 
-		public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
-		{
-			provider.RegisterConfiguration()
-				.RegisterMyProjectWindowsServiceWithDatabase()
-				.Register<Worker>();
+		return provider;
+	}
 
-			return provider;
-		}
+	private static IDIRegistrator RegisterConfiguration(this IDIRegistrator registrator)
+	{
+		Configuration = new ConfigurationBuilder()
+			.AddJsonFile("appsettings.json", false)
+			.Build();
 
-		private static IDIRegistrator RegisterConfiguration(this IDIRegistrator registrator)
-		{
-			Configuration = new ConfigurationBuilder()
-				.AddJsonFile("appsettings.json", false)
-				.Build();
+		registrator.Register(p => Configuration, LifetimeType.Singleton);
 
-			registrator.Register(p => Configuration, LifetimeType.Singleton);
-
-			return registrator;
-		}
+		return registrator;
 	}
 }

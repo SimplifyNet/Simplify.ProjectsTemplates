@@ -1,8 +1,7 @@
 ﻿using Simplify.Repository;
 
-namespace MyProjectWindowsServiceWithDatabase.MyEntities
+namespace MyProjectWindowsServiceWithDatabase.MyEntities;
+
+public interface IMyEntity : IIdentityObject
 {
-	public interface IMyEntity : IIdentityObject
-	{
-	}
 }

@@ -7,12 +7,12 @@ namespace MyProject.Scheduler.Setup
 	{
 		public static IConfiguration Configuration { get; private set; }
 
-		public static IDIContainerProvider Register()
+		public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 		{
-			DIContainer.Current.RegisterConfiguration()
+			provider.RegisterConfiguration()
 				.Register<Worker>();
 
-			return DIContainer.Current;
+			return provider;
 		}
 
 		private static IDIRegistrator RegisterConfiguration(this IDIRegistrator registrator)

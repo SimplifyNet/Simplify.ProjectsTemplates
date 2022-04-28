@@ -1,9 +1,8 @@
 ﻿using MyProjectWindowsServiceWithDatabase.MyEntities;
 using Simplify.Repository.FluentNHibernate;
 
-namespace MyProjectWindowsServiceWithDatabase.Database.MyEntities
+namespace MyProjectWindowsServiceWithDatabase.Database.MyEntities;
+
+public class MyEntity : IdentityObject, IMyEntity
 {
-	public class MyEntity : IdentityObject, IMyEntity
-	{
-	}
 }

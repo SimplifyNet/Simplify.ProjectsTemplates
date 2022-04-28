@@ -1,18 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<LangVersion>9.0</LangVersion>
+		<LangVersion>10.0</LangVersion>
 
-		<Product>MyProjectWindowsServiceWithDatabase</Product>
 		<Description>MyProjectWindowsServiceWithDatabase database implementation</Description>
-		<Copyright>Copyright © 2021</Copyright>
+		<Product>MyProjectWindowsServiceWithDatabase</Product>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.DI" Version="4.0.*" />
-		<PackageReference Include="Simplify.Repository.FluentNHibernate" Version="1.4.*" />
-		<PackageReference Include="System.Data.SqlClient" Version="4.8.*" />
+		<ProjectReference Include="..\MyProjectWindowsServiceWithDatabase\MyProjectWindowsServiceWithDatabase.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\MyProjectWindowsServiceWithDatabase\MyProjectWindowsServiceWithDatabase.csproj" />
+		<PackageReference Include="Simplify.DI" Version="4.2.*" />
+		<PackageReference Include="Simplify.Repository.FluentNHibernate" Version="1.5.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.*" />
 	</ItemGroup>
 </Project>

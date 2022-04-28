@@ -1,20 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
-		<LangVersion>9.0</LangVersion>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
 
-
-		<Product>MyProjectWindowsServiceWithDatabase</Product>
 		<Description>MyProjectWindowsServiceWithDatabase.Database integration tests</Description>
-		<Copyright>Copyright © 2021</Copyright>
+		<Product>MyProjectWindowsServiceWithDatabase</Product>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.*" />
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.*" />
-		<PackageReference Include="NUnit" Version="3.13.*" />
-		<PackageReference Include="NUnit3TestAdapter" Version="3.17.*" />
+		<ProjectReference Include="..\MyProjectWindowsServiceWithDatabase.Database\MyProjectWindowsServiceWithDatabase.Database.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\MyProjectWindowsServiceWithDatabase.Database\MyProjectWindowsServiceWithDatabase.Database.csproj" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.*" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.*" />
+		<PackageReference Include="NUnit" Version="3.13.*" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.2.*" />
 	</ItemGroup>
 </Project>

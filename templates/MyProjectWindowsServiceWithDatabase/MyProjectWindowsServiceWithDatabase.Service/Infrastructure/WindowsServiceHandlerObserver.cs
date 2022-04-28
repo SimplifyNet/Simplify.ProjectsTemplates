@@ -1,22 +1,21 @@
 ﻿using Simplify.DI;
 using Simplify.WindowsServices;
 
-namespace MyProjectWindowsServiceWithDatabase.Service.Infrastructure
+namespace MyProjectWindowsServiceWithDatabase.Service.Infrastructure;
+
+public static class WindowsServiceHandlerObserver
 {
-	public static class WindowsServiceHandlerObserver
+	public static MultitaskServiceHandler SubscribeLog(this MultitaskServiceHandler handler)
 	{
-		public static MultitaskServiceHandler SubscribeLog(this MultitaskServiceHandler handler)
-		{
-			handler.OnException += OnException;
+		handler.OnException += OnException;
 
-			return handler;
-		}
+		return handler;
+	}
 
-		private static void OnException(ServiceExceptionArgs args)
-		{
-			using var scope = DIContainer.Current.BeginLifetimeScope();
+	private static void OnException(ServiceExceptionArgs args)
+	{
+		using var scope = DIContainer.Current.BeginLifetimeScope();
 
-			// Exception processing
-		}
+		// Exception processing
 	}
 }

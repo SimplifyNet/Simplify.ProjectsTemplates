@@ -2,14 +2,13 @@
 using System.Threading.Tasks;
 using Simplify.Repository;
 
-namespace MyProjectWindowsServiceWithDatabase.MyEntities
+namespace MyProjectWindowsServiceWithDatabase.MyEntities;
+
+public class MyEntityService : IMyEntityServiceService
 {
-	public class MyEntityService : IMyEntityServiceService
-	{
-		private readonly IGenericRepository<IMyEntity> _repository;
+	private readonly IGenericRepository<IMyEntity> _repository;
 
-		public MyEntityService(IGenericRepository<IMyEntity> repository) => _repository = repository;
+	public MyEntityService(IGenericRepository<IMyEntity> repository) => _repository = repository;
 
-		public Task<IList<IMyEntity>> GetAllAsync() => _repository.GetMultipleByQueryAsync();
-	}
+	public Task<IList<IMyEntity>> GetAllAsync() => _repository.GetMultipleByQueryAsync();
 }

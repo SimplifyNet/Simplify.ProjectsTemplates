@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MyProjectWindowsServiceWithDatabase.MyEntities
+namespace MyProjectWindowsServiceWithDatabase.MyEntities;
+
+public interface IMyEntityServiceService
 {
-	public interface IMyEntityServiceService
-	{
-		Task<IList<IMyEntity>> GetAllAsync();
-	}
+	Task<IList<IMyEntity>> GetAllAsync();
 }

@@ -1,27 +1,26 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Simplify.DI;
 
-namespace MyProject.WindowsService.Setup
+namespace MyProject.WindowsService.Setup;
+
+public static class IocRegistrations
 {
-	public static class IocRegistrations
+	public static IConfiguration Configuration { get; private set; }
+
+	public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 	{
-		public static IConfiguration Configuration { get; private set; }
+		provider.RegisterConfiguration()
+			.Register<Worker>();
 
-		public static IDIContainerProvider Register()
-		{
-			DIContainer.Current.RegisterConfiguration()
-				.Register<Worker>();
+		return provider;
+	}
 
-			return DIContainer.Current;
-		}
+	private static IDIRegistrator RegisterConfiguration(this IDIRegistrator registrator)
+	{
+		Configuration = new ConfigurationBuilder()
+			.AddJsonFile("appsettings.json", false)
+			.Build();
 
-		private static IDIRegistrator RegisterConfiguration(this IDIRegistrator registrator)
-		{
-			Configuration = new ConfigurationBuilder()
-				.AddJsonFile("appsettings.json", false)
-				.Build();
-
-			return registrator.Register(p => Configuration, LifetimeType.Singleton);
-		}
+		return registrator.Register(p => Configuration, LifetimeType.Singleton);
 	}
 }
