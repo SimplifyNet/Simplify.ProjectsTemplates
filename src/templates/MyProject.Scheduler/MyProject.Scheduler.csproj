@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net6.0</TargetFrameworks>
-		<LangVersion>10.0</LangVersion>
+		<TargetFrameworks>net7.0</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
 		<OutputType>Exe</OutputType>
 
 		<Description>MyProject.Scheduler service</Description>
