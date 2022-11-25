@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectWindowsServiceWith
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectWindowsServiceWithDatabase.Database", "MyProjectWindowsServiceWithDatabase.Database\MyProjectWindowsServiceWithDatabase.Database.csproj", "{285852CE-3367-453B-B156-7DDEF1FA6643}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectWindowsServiceWithDatabase.Database.IntegrationTests", "MyProjectWindowsServiceWithDatabase.Database.IntegrationTests\MyProjectWindowsServiceWithDatabase.Database.IntegrationTests.csproj", "{DA774F29-D22B-416F-B92D-F1C795DFF8FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectWindowsServiceWithDatabase.Database.SchemaUpdater", "MyProjectWindowsServiceWithDatabase.Database.SchemaUpdater\MyProjectWindowsServiceWithDatabase.Database.SchemaUpdater.csproj", "{DA774F29-D22B-416F-B92D-F1C795DFF8FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

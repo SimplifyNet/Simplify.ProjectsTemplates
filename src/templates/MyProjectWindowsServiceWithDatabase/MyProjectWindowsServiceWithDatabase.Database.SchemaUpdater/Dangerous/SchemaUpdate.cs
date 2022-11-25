@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using Simplify.FluentNHibernate;
 
-namespace MyProjectWindowsServiceWithDatabase.Database.IntegrationTests.Dangerous;
+namespace MyProjectWindowsServiceWithDatabase.Database.SchemaUpdater.Dangerous;
 
 [TestFixture]
 [Category("Integration")]
