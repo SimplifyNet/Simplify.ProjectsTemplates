@@ -1,24 +1,21 @@
-﻿using MyProjectWindowsServiceWithDatabase.Service;
-using MyProjectWindowsServiceWithDatabase.Service.Infrastructure;
+﻿using MyProject.Scheduler.Infrastructure;
+using MyProjectWindowsServiceWithDatabase.Service;
 using MyProjectWindowsServiceWithDatabase.Service.Setup;
 using Simplify.DI;
-using Simplify.DI.Provider.SimpleInjector;
-using Simplify.WindowsServices;
+using Simplify.Scheduler;
 
-#if DEBUG
-			// Run debugger
-			System.Diagnostics.Debugger.Launch();
-#endif
-
-(DIContainer.Current = new SimpleInjectorDIProvider())
+// IOC container setup
+DIContainer.Current
 	.RegisterAll()
 	.Verify();
 
-using var handler = new SingleTaskServiceHandler<Worker>(IocRegistrations.Configuration)
+using var scheduler = new SingleTaskScheduler<Worker>(IocRegistrations.Configuration)
 	.SubscribeLog();
 
-if (!handler.Start(args))
+if (!scheduler.Start(args))
 {
+	// One-time launch of user code without the scheduler
+
 	using var scope = DIContainer.Current.BeginLifetimeScope();
 	scope.Resolver.Resolve<Worker>().Run();
 }

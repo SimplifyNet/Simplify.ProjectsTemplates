@@ -1,10 +1,7 @@
 {
-	"profiles":
-	{
-		"MyProjectWindowsServiceWithDatabase":
-		{
-			"commandName": "Project",
-			"commandLineArgs": "console"
+	"profiles": {
+		"MyProjectWindowsServiceWithDatabase": {
+			"commandName": "Project"
 		}
 	}
 }

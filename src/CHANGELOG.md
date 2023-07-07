@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.6] - 2023-07-07
+
+### Changed
+
+- Windows service with database template switched to Simplify.Scheduler and upgraded to .NET 7
+- Formatting
+
+### Dependencies
+
+- Simplify.Repository.FluentNHibernate bump to 1.5.*
+
 ## [0.5] - 2022-11-25
 
 ### Added
