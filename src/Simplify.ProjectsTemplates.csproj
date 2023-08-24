@@ -2,17 +2,22 @@
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 
-		<PackageType>Template</PackageType>
 		<PackageVersion>0.6</PackageVersion>
+
+		<PackageType>Template</PackageType>
 		<PackageId>Simplify.ProjectsTemplates</PackageId>
 		<IsPackable>true</IsPackable>
+
+		<Authors>Alexander Krylkov</Authors>
+		<Product>Simplify</Product>
+		<Description>Simplify libraries project templates collection.</Description>
+		<Copyright>Licensed under LGPL</Copyright>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</PackageProjectUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/Logo.png</PackageIconUrl>
+		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<Title>Simplify project templates</Title>
-		<Authors>Alexander Krylkov</Authors>
-		<Description>Simplify libraries project templates collection.</Description>
 		<Tags>templates;simplify</Tags>
 
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.ProjectsTemplates/tree/master/src/Simplify.ProjectsTemplates/CHANGELOG.md for details</PackageReleaseNotes>
