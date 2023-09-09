@@ -17,6 +17,7 @@ dotnet new -i Simplify.ProjectsTemplates
 | :---------------------- | :---------------------- |
 | Simplify.Scheduler      | simplify.scheduler      |
 | Simplify.WindowsService | simplify.windowsservice |
+| Simplify.SchedulerWithDatabase | simplify.schedulerwithdatabase |
 
 ## Project creation example
 

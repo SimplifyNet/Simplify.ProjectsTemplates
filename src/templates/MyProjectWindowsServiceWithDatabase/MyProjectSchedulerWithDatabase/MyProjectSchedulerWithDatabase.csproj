@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+
+		<Description>MyProjectSchedulerWithDatabase domain library</Description>
+		<Product>MyProjectSchedulerWithDatabase</Product>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Simplify.Repository" Version="1.6.1" />
+		<PackageReference Include="Simplify.System" Version="1.6.*" />
+	</ItemGroup>
+</Project>

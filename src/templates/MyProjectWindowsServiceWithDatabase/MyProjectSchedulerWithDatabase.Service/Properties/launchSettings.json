@@ -1,0 +1,7 @@
+{
+	"profiles": {
+		"MyProjectSchedulerWithDatabase": {
+			"commandName": "Project"
+		}
+	}
+}

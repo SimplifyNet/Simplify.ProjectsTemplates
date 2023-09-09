@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectSchedulerWithDatabase.Service", "MyProjectSchedulerWithDatabase.Service\MyProjectSchedulerWithDatabase.Service.csproj", "{74EA86C6-ECF6-4848-9578-A4A40D3C5AFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectSchedulerWithDatabase", "MyProjectSchedulerWithDatabase\MyProjectSchedulerWithDatabase.csproj", "{C3826D09-5DA8-4DA2-A49A-4D32D9E3914B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectSchedulerWithDatabase.Database", "MyProjectSchedulerWithDatabase.Database\MyProjectSchedulerWithDatabase.Database.csproj", "{285852CE-3367-453B-B156-7DDEF1FA6643}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectSchedulerWithDatabase.Database.SchemaUpdater", "MyProjectSchedulerWithDatabase.Database.SchemaUpdater\MyProjectSchedulerWithDatabase.Database.SchemaUpdater.csproj", "{DA774F29-D22B-416F-B92D-F1C795DFF8FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74EA86C6-ECF6-4848-9578-A4A40D3C5AFD}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{74EA86C6-ECF6-4848-9578-A4A40D3C5AFD}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{74EA86C6-ECF6-4848-9578-A4A40D3C5AFD}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{74EA86C6-ECF6-4848-9578-A4A40D3C5AFD}.Release|Mixed Platforms.Build.0 = Release|x64
+		{C3826D09-5DA8-4DA2-A49A-4D32D9E3914B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C3826D09-5DA8-4DA2-A49A-4D32D9E3914B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C3826D09-5DA8-4DA2-A49A-4D32D9E3914B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C3826D09-5DA8-4DA2-A49A-4D32D9E3914B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{285852CE-3367-453B-B156-7DDEF1FA6643}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{285852CE-3367-453B-B156-7DDEF1FA6643}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{285852CE-3367-453B-B156-7DDEF1FA6643}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{285852CE-3367-453B-B156-7DDEF1FA6643}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DA774F29-D22B-416F-B92D-F1C795DFF8FD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DA774F29-D22B-416F-B92D-F1C795DFF8FD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DA774F29-D22B-416F-B92D-F1C795DFF8FD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DA774F29-D22B-416F-B92D-F1C795DFF8FD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92A88EF4-3AF3-461F-96CC-4EA7685F1947}
+	EndGlobalSection
+EndGlobal

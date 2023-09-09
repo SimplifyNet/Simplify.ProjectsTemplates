@@ -6,11 +6,11 @@
 		"Simplify"
 	],
 	"name": "Simplify.Scheduler console scheduler with domain and persistance layer",
-	"identity": "Simplify.Template.WindowsService",
-	"shortName": "simplify.windowsservicewithdatabase",
+	"identity": "Simplify.Template.SchedulerWithDatabase",
+	"shortName": "simplify.schedulerwithdatabase",
 	"tags": {
 		"language": "C#",
 		"type": "project"
 	},
-	"sourceName": "MyProjectWindowsServiceWithDatabase"
+	"sourceName": "MyProjectSchedulerWithDatabase"
 }
