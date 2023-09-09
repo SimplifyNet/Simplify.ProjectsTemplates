@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.7] - 2023-09-09
+
+### Fixed
+
+- Simplify.Scheduler template docker file targets
+
+### Added
+
+- Simplify.Template.SchedulerWithDatabase template
+
+### Changed
+
+- Simplify.SchedulerWithDatabase async Run method
+
+### Dependencies
+
+- All update to latest
+
 ## [0.6] - 2023-07-07
 
 ### Changed
