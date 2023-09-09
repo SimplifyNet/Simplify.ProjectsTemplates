@@ -1,4 +1,5 @@
-﻿using MyProjectWindowsServiceWithDatabase.MyEntities;
+﻿using System.Threading.Tasks;
+using MyProjectWindowsServiceWithDatabase.MyEntities;
 
 namespace MyProjectWindowsServiceWithDatabase.Service;
 
@@ -8,9 +9,9 @@ internal class Worker
 
 	public Worker(IMyEntityServiceService service) => _service = service;
 
-	public void Run()
+	public async Task Run()
 	{
-		var items = _service.GetAllAsync().Result;
+		var items = await _service.GetAllAsync();
 
 		// TODO
 	}
