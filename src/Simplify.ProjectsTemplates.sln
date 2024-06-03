@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29324.140
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.Scheduler", "templates\MyProject.Scheduler\MyProject.Scheduler.csproj", "{8772629F-B57A-47CE-9AB5-598A53925D2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.Scheduler", "templates\MyProject.Scheduler\MyProject.Scheduler.csproj", "{F5FA3594-4F3F-49E1-8106-48BC9189CAAE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.WindowsService", "templates\MyProject.WindowsService\MyProject.WindowsService.csproj", "{60CACC17-F345-49A1-B5C1-7D4B855CAFBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.WindowsService", "templates\MyProject.WindowsService\MyProject.WindowsService.csproj", "{A439350F-67C7-44C0-A290-107E3C34EA3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectSchedulerWithDatabase", "templates\MyProjectWindowsServiceWithDatabase\MyProjectSchedulerWithDatabase\MyProjectSchedulerWithDatabase.csproj", "{25A041D2-7450-4FF1-ADEA-6E5745D2597A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectSchedulerWithDatabase.Database", "templates\MyProjectWindowsServiceWithDatabase\MyProjectSchedulerWithDatabase.Database\MyProjectSchedulerWithDatabase.Database.csproj", "{58461D36-0418-447C-91EA-7925B3FE9E91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectSchedulerWithDatabase.Database.SchemaUpdater", "templates\MyProjectWindowsServiceWithDatabase\MyProjectSchedulerWithDatabase.Database.SchemaUpdater\MyProjectSchedulerWithDatabase.Database.SchemaUpdater.csproj", "{2E704C4F-40F0-4ABE-AA34-7E45D3EFF4AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProjectSchedulerWithDatabase.Service", "templates\MyProjectWindowsServiceWithDatabase\MyProjectSchedulerWithDatabase.Service\MyProjectSchedulerWithDatabase.Service.csproj", "{76EDC1A6-A921-4651-9392-334AD430AAAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +21,35 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8772629F-B57A-47CE-9AB5-598A53925D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8772629F-B57A-47CE-9AB5-598A53925D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8772629F-B57A-47CE-9AB5-598A53925D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8772629F-B57A-47CE-9AB5-598A53925D2B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60CACC17-F345-49A1-B5C1-7D4B855CAFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60CACC17-F345-49A1-B5C1-7D4B855CAFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60CACC17-F345-49A1-B5C1-7D4B855CAFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60CACC17-F345-49A1-B5C1-7D4B855CAFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5FA3594-4F3F-49E1-8106-48BC9189CAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5FA3594-4F3F-49E1-8106-48BC9189CAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5FA3594-4F3F-49E1-8106-48BC9189CAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5FA3594-4F3F-49E1-8106-48BC9189CAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A439350F-67C7-44C0-A290-107E3C34EA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A439350F-67C7-44C0-A290-107E3C34EA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A439350F-67C7-44C0-A290-107E3C34EA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A439350F-67C7-44C0-A290-107E3C34EA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A041D2-7450-4FF1-ADEA-6E5745D2597A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A041D2-7450-4FF1-ADEA-6E5745D2597A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A041D2-7450-4FF1-ADEA-6E5745D2597A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A041D2-7450-4FF1-ADEA-6E5745D2597A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58461D36-0418-447C-91EA-7925B3FE9E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58461D36-0418-447C-91EA-7925B3FE9E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58461D36-0418-447C-91EA-7925B3FE9E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58461D36-0418-447C-91EA-7925B3FE9E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E704C4F-40F0-4ABE-AA34-7E45D3EFF4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E704C4F-40F0-4ABE-AA34-7E45D3EFF4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E704C4F-40F0-4ABE-AA34-7E45D3EFF4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E704C4F-40F0-4ABE-AA34-7E45D3EFF4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76EDC1A6-A921-4651-9392-334AD430AAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EDC1A6-A921-4651-9392-334AD430AAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EDC1A6-A921-4651-9392-334AD430AAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EDC1A6-A921-4651-9392-334AD430AAAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C09D895E-64C9-4E6A-B563-A7B7945A140F}
+		SolutionGuid = {CC3BA27B-C694-4B8D-AD6F-3DB5AF97B0E4}
 	EndGlobalSection
 EndGlobal

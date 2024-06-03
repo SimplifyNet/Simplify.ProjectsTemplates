@@ -1,5 +1,5 @@
-﻿using MyProject.Scheduler.Infrastructure;
-using MyProjectSchedulerWithDatabase.Service;
+﻿using MyProjectSchedulerWithDatabase.Service;
+using MyProjectSchedulerWithDatabase.Service.Infrastructure;
 using MyProjectSchedulerWithDatabase.Service.Setup;
 using Simplify.DI;
 using Simplify.Scheduler;

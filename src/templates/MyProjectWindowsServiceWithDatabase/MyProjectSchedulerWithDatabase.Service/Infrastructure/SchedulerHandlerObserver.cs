@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using Simplify.Scheduler;
 
-namespace MyProject.Scheduler.Infrastructure;
+namespace MyProjectSchedulerWithDatabase.Service.Infrastructure;
 
 public static class SchedulerHandlerObserver
 {
@@ -12,5 +12,5 @@ public static class SchedulerHandlerObserver
 		return handler;
 	}
 
-	private static void OnException(SchedulerExceptionArgs args) => Trace.WriteLine(args.Exception.Message);
+	private static void OnException(SchedulerExceptionArgs args) => Trace.TraceInformation(args.Exception.Message);
 }
