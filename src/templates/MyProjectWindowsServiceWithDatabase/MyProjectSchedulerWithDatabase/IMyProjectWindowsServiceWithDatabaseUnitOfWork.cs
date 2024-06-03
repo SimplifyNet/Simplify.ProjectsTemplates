@@ -2,6 +2,4 @@
 
 namespace MyProjectSchedulerWithDatabase;
 
-public interface IMyProjectSchedulerWithDatabaseUnitOfWork : ITransactUnitOfWork
-{
-}
+public interface IMyProjectSchedulerWithDatabaseUnitOfWork : ITransactUnitOfWork;

@@ -2,6 +2,4 @@
 
 namespace MyProjectSchedulerWithDatabase.MyEntities;
 
-public interface IMyEntity : IIdentityObject
-{
-}
+public interface IMyEntity : IIdentityObject;

@@ -3,6 +3,4 @@ using Simplify.Repository.FluentNHibernate;
 
 namespace MyProjectSchedulerWithDatabase.Database.MyEntities;
 
-public class MyEntity : IdentityObject, IMyEntity
-{
-}
+public class MyEntity : IdentityObject, IMyEntity;

@@ -4,11 +4,7 @@ using Simplify.Repository;
 
 namespace MyProjectSchedulerWithDatabase.MyEntities;
 
-public class MyEntityService : IMyEntityServiceService
+public class MyEntityService(IGenericRepository<IMyEntity> repository) : IMyEntityServiceService
 {
-	private readonly IGenericRepository<IMyEntity> _repository;
-
-	public MyEntityService(IGenericRepository<IMyEntity> repository) => _repository = repository;
-
-	public Task<IList<IMyEntity>> GetAllAsync() => _repository.GetMultipleByQueryAsync();
+	public Task<IList<IMyEntity>> GetAllAsync() => repository.GetMultipleAsync();
 }

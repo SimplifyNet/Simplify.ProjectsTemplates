@@ -3,9 +3,5 @@ using Simplify.Repository.FluentNHibernate;
 
 namespace MyProjectSchedulerWithDatabase.Database;
 
-public class MyProjectSchedulerWithDatabaseUnitOfWork : TransactUnitOfWork, IMyProjectSchedulerWithDatabaseUnitOfWork
-{
-	public MyProjectSchedulerWithDatabaseUnitOfWork(ISessionFactory sessionFactory) : base(sessionFactory)
-	{
-	}
-}
+public class MyProjectSchedulerWithDatabaseUnitOfWork(ISessionFactory sessionFactory)
+	: TransactUnitOfWork(sessionFactory), IMyProjectSchedulerWithDatabaseUnitOfWork;

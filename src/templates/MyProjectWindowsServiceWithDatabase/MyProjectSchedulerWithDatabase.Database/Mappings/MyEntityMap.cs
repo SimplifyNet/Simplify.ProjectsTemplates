@@ -3,6 +3,4 @@ using Simplify.Repository.FluentNHibernate.Mappings;
 
 namespace MyProjectSchedulerWithDatabase.Database.Mappings;
 
-public class MyEntityMap : IdentityObjectMap<MyEntity>
-{
-}
+public class MyEntityMap : IdentityObjectMap<MyEntity>;
