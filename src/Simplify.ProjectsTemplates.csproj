@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net9.0</TargetFramework>
 
-		<PackageVersion>0.8</PackageVersion>
+		<PackageVersion>0.9</PackageVersion>
 
 		<PackageType>Template</PackageType>
 		<PackageId>Simplify.ProjectsTemplates</PackageId>

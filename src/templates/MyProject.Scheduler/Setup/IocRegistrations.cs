@@ -10,7 +10,7 @@ namespace MyProject.Scheduler.Setup
 		public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 		{
 			provider.RegisterConfiguration()
-				.Register<Worker>();
+				.Register<WorkerAsync>();
 
 			return provider;
 		}

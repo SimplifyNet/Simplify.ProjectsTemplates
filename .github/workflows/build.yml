@@ -20,6 +20,8 @@ jobs:
 
       - name: Install DotNet
         uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "9.0.x"
 
       - name: Restore Dependencies
         run: dotnet restore Simplify.ProjectsTemplates.csproj

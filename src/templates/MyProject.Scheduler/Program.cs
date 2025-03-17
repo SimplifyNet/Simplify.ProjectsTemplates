@@ -9,13 +9,15 @@ DIContainer.Current
 	.RegisterAll()
 	.Verify();
 
-using var scheduler = new SingleTaskScheduler<Worker>(IocRegistrations.Configuration)
+using var scheduler = new SingleTaskScheduler<WorkerAsync>(IocRegistrations.Configuration)
 	.SubscribeLog();
 
-if (!scheduler.Start(args))
-{
-	// One-time launch of user code without the scheduler
+if (await scheduler.StartAsync(args))
+	return;
 
-	using var scope = DIContainer.Current.BeginLifetimeScope();
-	scope.Resolver.Resolve<Worker>().Run();
-}
+
+// One-time launch of user code without the scheduler
+
+using var scope = DIContainer.Current.BeginLifetimeScope();
+await scope.Resolver.Resolve<WorkerAsync>().Run();
+

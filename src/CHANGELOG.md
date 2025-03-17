@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.9] - 2024-03-17
+
+### Dependencies
+
+- Target framework bump to .NET 9
+- Microsoft.Extensions.Configuration.Json bump to 9.0.*
+- Simplify.Repository.FluentNHibernate bump to 1.7.1
+- System.Data.SqlClient bump to 4.9.*
+- NUnit bump to v4
+- Test deps bump to latest
+
+### Changed
+
+- Switch to async Simplify.Scheduler usage
+
 ## [0.8] - 2024-06-01
 
 ### Dependencies
