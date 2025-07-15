@@ -13,7 +13,6 @@ System.Diagnostics.Debugger.Launch();
 
 //+:cnd:noEmit
 
-
 // IOC container setup
 DIContainer.Current
 	.RegisterAll()

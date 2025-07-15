@@ -12,12 +12,11 @@ DIContainer.Current
 using var scheduler = new SingleTaskScheduler<Worker>(IocRegistrations.Configuration)
 	.SubscribeLog();
 
-if (!await scheduler.StartAsync(args))
-{
-	// One-time launch of user code without the scheduler
+if (await scheduler.StartAsync(args))
+	return;
 
-	using var scope = DIContainer.Current.BeginLifetimeScope();
+// One-time launch of user code without the scheduler
 
-	await scope.Resolver.Resolve<Worker>()
-		.Run();
-}
+using var scope = DIContainer.Current.BeginLifetimeScope();
+await scope.Resolver.Resolve<Worker>()
+	.Run();

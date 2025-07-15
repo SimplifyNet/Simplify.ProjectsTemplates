@@ -1,8 +1,6 @@
 {
-	"profiles":
-	{
-		"MyProject.WindowsService":
-		{
+	"profiles": {
+		"MyProject.WindowsService": {
 			"commandName": "Project",
 			"commandLineArgs": "skip"
 		}

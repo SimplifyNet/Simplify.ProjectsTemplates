@@ -15,7 +15,6 @@ using var scheduler = new SingleTaskScheduler<WorkerAsync>(IocRegistrations.Conf
 if (await scheduler.StartAsync(args))
 	return;
 
-
 // One-time launch of user code without the scheduler
 
 using var scope = DIContainer.Current.BeginLifetimeScope();

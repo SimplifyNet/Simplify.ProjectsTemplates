@@ -4,6 +4,4 @@ using Simplify.WindowsServices;
 namespace MyProject.WindowsService;
 
 [RunInstaller(true)]
-public class ServiceInstaller : ServiceInstallerBase
-{
-}
+public class ServiceInstaller : ServiceInstallerBase;

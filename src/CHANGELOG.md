@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.9.1] - 2025-07-15
+
+### Dependencies
+
+- Simplify.Scheduler bump to 1.6
+- Simplify.WindowsServices bump to 2.15
+- Microsoft.NET.Test.Sdk bump to 17.14.*
+- NUnit3TestAdapter bump to 5.0.*
+
 ## [0.9] - 2024-03-17
 
 ### Dependencies
