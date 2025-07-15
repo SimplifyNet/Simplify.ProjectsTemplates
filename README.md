@@ -40,4 +40,4 @@ There are many ways in which you can participate in the project. Like most open-
 
 ## License
 
-Licensed under the GNU LESSER GENERAL PUBLIC LICENSE
+Licensed under the GNU Lesser General Public License (LGPL). For more details, see the [LICENSE](./LICENSE) file.
