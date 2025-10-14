@@ -12,6 +12,7 @@
 		<Product>Simplify</Product>
 		<Description>Simplify libraries project templates collection.</Description>
 		<Copyright>Licensed under LGPL</Copyright>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</PackageProjectUrl>
 		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.ProjectsTemplates</RepositoryUrl>
@@ -34,6 +35,7 @@
 	<ItemGroup>
 		<None Include="..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
 		<None Include="CHANGELOG.md" Pack="true" PackagePath="\" />
+		<None Include="..\LICENSE.txt" Pack="true" PackagePath="\" />
 		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
