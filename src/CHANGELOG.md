@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.9.2] - 2025-10-14
+
+- Simplify.Repository.FluentNHibernate bump to 1.7.2
+- Test deps bump to latest
+
 ## [0.9.1] - 2025-07-15
 
 ### Dependencies
