@@ -2,5 +2,8 @@
 	"cSpell.words": [
 		"appsettings",
 		"Registrator"
+	],
+	"dotrush.roslyn.projectOrSolutionFiles": [
+		"/mnt/Fast/Projects/SimplifyNet/Simplify.ProjectsTemplates/src/Simplify.ProjectsTemplates.sln"
 	]
 }

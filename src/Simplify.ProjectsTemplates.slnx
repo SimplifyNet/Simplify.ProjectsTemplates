@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="templates/MyProject.Scheduler/MyProject.Scheduler.csproj" />
+  <Project Path="templates/MyProject.WindowsService/MyProject.WindowsService.csproj" />
+  <Project Path="templates/MyProjectWindowsServiceWithDatabase/MyProjectSchedulerWithDatabase.Database.SchemaUpdater/MyProjectSchedulerWithDatabase.Database.SchemaUpdater.csproj" />
+  <Project Path="templates/MyProjectWindowsServiceWithDatabase/MyProjectSchedulerWithDatabase.Database/MyProjectSchedulerWithDatabase.Database.csproj" />
+  <Project Path="templates/MyProjectWindowsServiceWithDatabase/MyProjectSchedulerWithDatabase.Service/MyProjectSchedulerWithDatabase.Service.csproj" />
+  <Project Path="templates/MyProjectWindowsServiceWithDatabase/MyProjectSchedulerWithDatabase/MyProjectSchedulerWithDatabase.csproj" />
+</Solution>
