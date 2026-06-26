@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net9.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
 
 		<Description>MyProjectSchedulerWithDatabase database implementation</Description>
@@ -10,8 +10,8 @@
 		<ProjectReference Include="..\MyProjectSchedulerWithDatabase\MyProjectSchedulerWithDatabase.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.DI" Version="4.2.*" />
-		<PackageReference Include="Simplify.Repository.FluentNHibernate" Version="1.7.2" />
+		<PackageReference Include="Simplify.DI" Version="4.3.*" />
+		<PackageReference Include="Simplify.Repository.FluentNHibernate" Version="1.7.4" />
 		<PackageReference Include="System.Data.SqlClient" Version="4.9.*" />
 	</ItemGroup>
 </Project>

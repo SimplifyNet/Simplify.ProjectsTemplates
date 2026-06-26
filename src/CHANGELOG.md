@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.10.0] - 2026-06-26
+
+### Dependencies
+
+- Target framework bump to .NET 10
+- Simplify.DI bump to 4.3.*
+- Simplify.Scheduler bump to 1.7.*
+- Simplify.WindowsServices bump to 2.16.*
+- Simplify.Repository bump to 1.7.1
+- Simplify.Repository.FluentNHibernate bump to 1.7.4
+
+- Microsoft.Extensions.Configuration.Json bump to 10.0.*
+- Microsoft.NET.Test.Sdk bump to 18.7.*
+- NUnit bump to 4.6.*
+- NUnit3TestAdapter bump to 6.2.*
+
 ## [0.9.2] - 2025-10-14
 
 - Simplify.Repository.FluentNHibernate bump to 1.7.2
